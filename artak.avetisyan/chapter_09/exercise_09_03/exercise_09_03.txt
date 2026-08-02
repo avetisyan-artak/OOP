@@ -1,0 +1,21 @@
+What is the purpose of the scope resolution operator?
+
+Answer:
+The scope resolution operator (::) in C++ is used to specify the scope to which an identifier belongs.
+It allows access to global variables, class members, static members, and namespace members.
+
+Example:
+
+class Student {
+public:
+    void display();
+};
+
+void
+Student::display()
+{
+    // function definition outside the class
+}
+
+Here, Student::display() specifies that the display() function belongs to the Student class.
+

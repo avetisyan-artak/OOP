@@ -28,3 +28,4 @@ new[] – allocates memory for an array.
 delete – frees memory allocated with new.
 delete[] – frees memory allocated with new[].
 
+

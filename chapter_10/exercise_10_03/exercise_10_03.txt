@@ -1,0 +1,23 @@
+Compare and contrast dynamic memory allocation and deallocation operators new, new [], delete and delete [].
+
+Answer:
+The operators new, new[], delete, and delete[] are used for dynamic memory management in C++.
+-new allocates memory for a single object and returns a pointer to it.
+int* ptr = new int;
+
+-new[] allocates memory for an array of objects.
+int* arr = new int[10];
+
+-delete deallocates memory that was allocated with new.
+delete ptr;
+
+-delete[] deallocates memory that was allocated with new[].
+delete[] arr;
+
+It is important to match the correct allocation and deallocation operators:
+
+new <-> delete
+new[] <-> delete[]
+
+Using the wrong deallocation operator results in undefined behavior.
+

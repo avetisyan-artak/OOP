@@ -1,0 +1,26 @@
+Explain the notion of friendship in C++. Explain the negative aspects of friendship as described in the text.
+
+Answer:
+
+Friendship in C++ allows a function or another class to access the private and protected members of a class, even though they are normally inaccessible from outside the class.
+A class grants friendship by using the friend keyword.
+
+Example:
+
+class Time
+{
+    friend void displayTime(const Time&);
+
+private:
+    int hour;
+    int minute;
+};
+
+Here, displayTime can access the private data members hour and minute.
+
+Negative aspects of friendship
+Friendship breaks encapsulation by allowing outside functions or classes to access private data.
+It reduces data hiding, making the class less secure.
+It increases coupling between classes or functions, making the program harder to maintain and modify.
+Friendship should be used only when necessary, because excessive use can make code less modular and more difficult to understand.
+

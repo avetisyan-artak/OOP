@@ -1,0 +1,22 @@
+Can a correct Time class definition include both of the following constructors? If not, explain why not.
+
+Time( int h = 0, int m = 0, int s = 0 );
+Time();
+
+Answer.
+
+No. A correct Time class cannot include both constructors.
+Time( int h = 0, int m = 0, int s = 0 );
+Time();
+
+The first constructor has default arguments, so it can be called with no arguments:
+Time t1;   /// Calls Time(0, 0, 0);
+
+The second constructor can also be called with no arguments:
+Time t2;   /// Calls Time();
+
+As a result, the statement.
+Time t;
+
+becomes ambiguous, because the compiler cannot determine which constructor to call. Therefore, the class definition is incorrect.
+

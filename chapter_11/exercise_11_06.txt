@@ -1,0 +1,21 @@
+Give as many examples as you can of operator overloading implicit in C++.
+Give a reasonable example of a situation in which you might want to overload an operator explicitly in C++.
+
+Answer:
+
+Implicit operator overloading examples in C++:
+
++ works with int, double, etc.
+<< works with cout for different data types.
+>> works with cin for different data types.
+== compares different built-in types.
+[] accesses array elements.
+++ increments numeric values.
+
+Explicit operator overloading example:
+When creating a user-defined class like String or Complex, we overload + so objects can be added naturally:
+
+String s3 = s1 + s2;
+
+This allows combining objects without modifying the original ones.
+

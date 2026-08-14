@@ -1,0 +1,26 @@
+Student - This is the base class, representing any student at a university.
+It may contain common attributes (data members) such as name, ID, course, grades, etc.
+
+UndergraduateStudent - Inherits from Student.
+Represents students who are studying at the undergraduate (bachelor’s) level.
+
+GraduateStudent - Also inherits from Student.
+Represents students who are in graduate-level programs (master’s or doctoral studies).
+
+Freshman, Sophomore, Junior, Senior - These all inherit from UndergraduateStudent.
+They represent the four years (or levels) of an undergraduate program:
+
+Freshman - first-year student
+
+Sophomore - second-year student
+
+Junior - third-year student
+
+Senior - fourth-year student
+
+MastersStudent and DoctoralStudent - Inherit from GraduateStudent.
+
+MastersStudent - represents a master’s degree student
+
+DoctoralStudent - represents a PhD (doctoral) student
+

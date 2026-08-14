@@ -1,0 +1,12 @@
+                    Student
+                      |
+        |---------------------------|
+        |                           |
+UndergraduateStudent         GraduateStudent
+        |                           |
+ |-------------|              |-------------|
+ |             |              |             |
+Freshman   Sophomore       MastersStudent  DoctoralStudent
+ |             |
+Junior       Senior
+

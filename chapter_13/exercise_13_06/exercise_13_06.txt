@@ -1,0 +1,30 @@
+What are virtual functions? Describe a circumstance in which virtual functions would be appropriate.
+
+Answer:
+
+A virtual function in C++ is a member function in a base class that we expect to override in derived classes.
+It allows dynamic (runtime) polymorphism, meaning that when we call the function through a base class pointer or reference,
+the version of the function that belongs to the actual object type (derived class) is executed, not necessarily the base class version.
+Declared using the keyword virtual in the base class.
+Enables the program to decide at runtime which function to call.
+
+Key point:
+    Without virtual, the function call is resolved at compile time (static binding).
+    With virtual, the call is resolved at runtime (dynamic binding).
+
+Virtual functions are useful when:
+    We have a base class pointer or reference that can point to objects of different derived types.
+    We want to call a method on the object, but the behavior should depend on the actual type of the object, not the type of the pointer or reference.
+
+Example Situation:
+    We have a base class Shape with a function draw().
+    We have derived classes Circle and Rectangle, each implementing draw() differently.
+    If we have a Shape* pointer pointing to a Circle or Rectangle, a virtual draw() function ensures the correct draw() method is called depending on the actual object type.
+
+Without virtual:
+    The Shape version of draw() would always be called, ignoring the derived class implementation.
+
+Virtual functions enable runtime polymorphism.
+    They are appropriate when we want flexible behavior depending on the actual derived class,
+    especially when working with base class pointers or references.
+

@@ -1,0 +1,17 @@
+Quadrilateral - Base class
+
+The most general four-sided figure.
+    All others inherit from this.
+
+Trapezoid - Derived from Quadrilateral
+    Adds the property of one pair of parallel sides.
+
+Parallelogram - Derived from Trapezoid
+    Adds the property of two pairs of parallel sides.
+
+Rectangle - Derived from Parallelogram
+    Adds the property of four right angles.
+
+Square - Derived from Rectangle
+    Adds the property of four equal sides.
+

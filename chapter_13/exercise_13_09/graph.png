@@ -1,0 +1,12 @@
+Shape (abstract)
+|
+|-- TwoDimensionalShape (abstract)
+|   |-- Circle (concrete)
+|   |-- Square (concrete)
+|   |-- Triangle (concrete)
+|
+|-- ThreeDimensionalShape (abstract)
+    |-- Sphere (concrete)
+    |-- Cube (concrete)
+    |-- Tetrahedron (concrete)
+

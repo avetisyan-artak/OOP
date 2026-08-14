@@ -1,0 +1,44 @@
+Suggest one or more levels of abstract base classes for the Shape hierarchy discussed in this chapter and shown in Fig. 12.3.
+(The first level is Shape, and the second level consists of the classes TwoDimensionalShape and THReeDimensionalShape.)
+
+Answer:
+
+Level 1 (Abstract Base Class)
+
+Shape
+This is already abstract, because it represents the general concept of a shape.
+Can include pure virtual functions such as:
+    getArea()
+    getPerimeter() (for 2D shapes)
+    getVolume() (for 3D shapes)
+    print()
+
+Level 2 (Abstract Base Classes)
+
+TwoDimensionalShape
+Abstract because not all 2D shapes are the same.
+Can include pure virtual functions specific to 2D shapes:
+    getArea()
+    getPerimeter()
+
+ThreeDimensionalShape
+Abstract because not all 3D shapes are the same.
+Can include pure virtual functions specific to 3D shapes:
+    getSurfaceArea()
+    getVolume()
+
+Level 3 (Concrete Classes)
+
+2D Shapes: Circle, Square, Triangle
+Each implements getArea() and getPerimeter().
+
+3D Shapes: Sphere, Cube, Tetrahedron
+Each implements getSurfaceArea() and getVolume().
+
+Key Idea:
+
+Shape -> general abstract base class for all shapes.
+
+TwoDimensionalShape / ThreeDimensionalShape → abstract base classes for 2D vs 3D specialization.
+Concrete shapes implement all the pure virtual functions.
+

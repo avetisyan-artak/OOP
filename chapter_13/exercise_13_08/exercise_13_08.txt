@@ -1,0 +1,28 @@
+Distinguish between virtual functions and pure virtual functions.
+
+Answer:
+
+1. Virtual Functions
+
+A function declared in a base class that can be overridden in derived classes.
+The base class may provide a concrete implementation.
+Subclasses can use the base class implementation or override it.
+Important for runtime polymorphism.
+
+Example:
+    Base class Shape - virtual draw() with a base implementation.
+    Derived class Circle can override draw().
+    Base class pointer calls the correct function at runtime.
+
+2. Pure Virtual Functions
+
+Declared in a base class but has no implementation in the base class.
+Subclasses must implement the function.
+Makes the base class an abstract class.
+Used to create a contract / interface.
+
+Example:
+    Base class Worker → pure virtual work().
+    Derived classes Student and Teacher must implement work().
+    Cannot create objects of the base class.
+

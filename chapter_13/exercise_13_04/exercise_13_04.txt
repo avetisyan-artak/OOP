@@ -1,0 +1,65 @@
+Discuss the problems of programming with switch logic. Explain why polymorphism can be an effective alternative to using switch logic.
+
+Answer:
+
+Problems of Programming with Switch Logic
+
+Programming with switch logic often leads to inflexible and hard-to-maintain software designs.
+A switch statement forces the programmer to handle different types or behaviors through multiple conditional branches.
+While this approach may seem straightforward for small programs, it creates serious issues as a system grows.
+
+Violation of the Open/Closed Principle
+Each time a new behavior or type is added, the programmer must modify the existing switch statement to include a new case.
+This constant modification makes the system error-prone and violates the open/closed principle, which states that software should be open for extension but closed for modification.
+
+Poor Maintainability and Readability
+Large switch statements can become long, repetitive, and difficult to follow.
+As the number of cases increases, understanding or debugging the program becomes much harder.
+Any small mistake in one branch can affect the whole structure.
+
+Code Duplication
+In many programs, similar switch statements appear in multiple places to handle the same kind of logic.
+This duplication increases the risk of inconsistencies and makes maintenance more difficult, since the same change must be applied in many different locations.
+
+Weak Encapsulation
+Switch logic separates data from the operations that belong to it.
+In other words, the behavior that should naturally be part of a specific object is handled externally in a switch structure.
+This goes against the basic principles of object-oriented programming, where data and behavior should be kept together.
+
+Limited Extensibility
+When new types or behaviors are needed, the programmer must update every switch statement that depends on them.
+This makes the program rigid and resistant to future growth or modification.
+
+Why Polymorphism Is an Effective Alternative
+
+Polymorphism provides a more elegant, flexible, and maintainable solution to these problems.
+It allows objects of different classes to be treated uniformly through a common interface, while each object can define its own specific behavior.
+
+Eliminates the Need for Switch Statements
+Instead of checking the type of an object to decide what to do, polymorphism allows each object to decide for itself how to perform an operation.
+This removes the need for long conditional structures.
+
+Easier to Extend and Modify
+New behaviors or object types can be added by simply defining new subclasses that implement the required behavior.
+There is no need to alter existing code, which makes the system more stable and easier to evolve.
+
+Improved Readability and Organization
+With polymorphism, each class is responsible for its own behavior.
+This leads to a more organized program structure, where logic is easier to understand and changes are easier to make.
+
+Stronger Encapsulation
+Since behavior is defined inside the class that owns the data, objects fully manage themselves.
+This keeps the program consistent with object-oriented design principles.
+
+Promotes Reusability and Flexibility
+Polymorphism enables programmers to write general and reusable code that can work with any class that follows a common interface.
+This allows programs to adapt easily to future changes without rewriting major parts of the code.
+
+Conclusion
+
+Switch logic is a rigid, procedural approach that ties behavior to specific cases, leading to repetitive and hard-to-maintain code.
+Polymorphism, on the other hand, is a core object-oriented technique that promotes flexibility, extensibility, and cleaner design.
+
+By replacing switch logic with polymorphism, programmers can “program in the general rather than in the specific” — focusing on common behaviors and
+letting individual objects handle their unique details. This results in software that is easier to understand, modify, and extend.
+

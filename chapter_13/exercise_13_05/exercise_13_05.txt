@@ -1,0 +1,30 @@
+Distinguish between inheriting interface and inheriting implementation.
+How do inheritance hierarchies designed for inheriting interface differ from those designed for inheriting implementation?
+
+Answer:
+
+1. Inheriting Interface
+
+What it is:
+    The base class defines what the class should do (method names, parameters, return types) but does not provide implementation.
+    Subclasses are required to implement these methods in their own way.
+
+Key characteristics:
+    The base class is abstract or just an interface.
+    Subclasses are independent of the base class’s implementation.
+    The hierarchy is flexible and extensible; new subclasses can be added without changing the base class.
+    Enables polymorphism, allowing code to work with objects through a general interface rather than specific types.
+
+2. Inheriting Implementation
+
+What it is:
+    The base class provides implemented methods, which subclasses can use directly or override.
+    Key characteristics:
+    Subclasses can reuse base class methods without rewriting code.
+
+    Hierarchy is more tightly coupled; changes in the base class affect all subclasses.
+    Mainly used for code reuse and extending the base class’s provided behavior.
+
+Interface inheritance - “what to do”, focuses on polymorphism and flexible hierarchies.
+Implementation inheritance - “how to do it”, focuses on code reuse and providing ready-made implementations.
+

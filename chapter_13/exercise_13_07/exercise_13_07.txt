@@ -1,0 +1,29 @@
+Distinguish between static binding and dynamic binding. Explain the use of virtual functions and the vtable in dynamic binding.
+
+Answer:
+
+Static Binding vs Dynamic Binding
+
+1. Static Binding (Early Binding / Compile-time)
+    The function call is determined at compile time.
+    A base class pointer always calls the base class function, even if the object is of a derived type.
+    Used for non-virtual functions.
+
+2. Dynamic Binding (Late Binding / Run-time)
+    The function call is determined at run time based on the actual type of the object.
+    A base class pointer calling a virtual function executes the derived class’s override if it exists.
+    Used to enable polymorphism.
+
+Virtual Functions and vtable
+
+Virtual function – a function declared in a base class to be overridden in derived classes.
+Vtable (virtual table) – a compiler-generated table storing the addresses of virtual functions for each class.
+
+When calling a virtual function via a base class pointer or reference, the vtable is used at runtime to find and execute the correct derived class function.
+
+Example:
+    Base class: Shape - virtual draw()
+    Derived class: Circle overrides draw()
+    Shape* ptr = new Circle; ptr->draw();
+    At runtime, the vtable ensures Circle’s draw() is executed.
+

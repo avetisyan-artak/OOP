@@ -1,0 +1,11 @@
+Discuss the ways in which inheritance promotes software reuse, saves time during program development and helps prevent errors.
+
+Answer.
+
+Inheritance promotes software reuse because a derived class can reuse the data and functions of an existing base class.
+
+Saves time — no need to rewrite the same code.
+Prevents errors — tested code can be reused.
+Makes maintenance easier — common functionality is kept in the base class.
+In short: Write once, reuse many times.
+

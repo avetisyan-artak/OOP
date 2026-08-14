@@ -1,0 +1,9 @@
+How does polymorphism promote extensibility?
+
+Answer:
+
+Polymorphism promotes extensibility because it allows programs to work with general interfaces rather than specific implementations.
+This means new classes can be added and integrated into the system without modifying existing code.
+Existing code can interact with new types through the base class interface, reducing dependency on specific implementations and supporting the open/closed principle.
+In this way, polymorphism enables the system to grow and adapt to new requirements while minimizing changes to previously tested and working code.
+

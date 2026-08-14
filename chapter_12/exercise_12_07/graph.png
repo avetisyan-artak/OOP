@@ -1,0 +1,20 @@
+                           Shape
+                             |
+             |------------------------------------|
+             |                                    |
+   TwoDimensionalShape             ThreeDimensionalShape
+             |                                  |
+  |----------|----------|          |------------|--------------|
+  |          |          |          |            |              |
+Circle    Polygon     Ellipse     Sphere       Polyhedron     Cone
+              |                       |               |
+   |----------|--------|         |----------|    |-----------|
+   |          |        |         |          |    |           |
+Triangle  Rectangle  Pentagon   Hemisphere Cube  Cylinder  Pyramid
+   |          |         |
+   |       Square     Hexagon
+   |
+  |--------------|
+  |              |
+RightTriangle  EquilateralTriangle
+

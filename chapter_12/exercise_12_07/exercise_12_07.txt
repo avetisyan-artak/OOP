@@ -1,0 +1,35 @@
+1. Base class: Shape
+Represents any geometric shape.
+Could include general attributes such as color, position, or area/volume calculation methods (conceptually).
+
+2. TwoDimensionalShape (2D)
+Represents flat shapes - those that exist in two dimensions (length and width).
+Common examples:
+    Circle - defined by a radius.
+    Ellipse - more general than a circle (has two radii).
+    Polygon - a closed figure with straight sides.
+
+3. Subclasses of Polygon
+
+Triangle - 3 sides.
+RightTriangle  one right angle.
+EquilateralTriangle - all sides equal.
+Rectangle - 4 right angles.
+Square - special rectangle with all sides equal.
+Pentagon, Hexagon, etc. - regular polygons with 5, 6, or more sides.
+
+4. ThreeDimensionalShape (3D)
+
+Represents solid shapes - those that have length, width, and height.
+Common examples:
+    Sphere - perfectly round 3D shape.
+    Cone - has a circular base and a pointed top.
+    Cylinder - has two parallel circular bases.
+    Polyhedron - solid shape with flat polygonal faces.
+
+5. Subclasses of Polyhedron
+
+Cube - all faces are equal squares.
+Pyramid - polygon base with triangular sides meeting at an apex.
+Prism - two parallel, congruent polygon bases connected by rectangular faces.
+

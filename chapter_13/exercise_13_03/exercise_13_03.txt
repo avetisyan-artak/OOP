@@ -1,0 +1,31 @@
+How is it that polymorphism enables you to program "in the general" rather than "in the specific"? Discuss the key advantages of programming "in the general."
+
+Answer:
+
+Polymorphism allows us to program “in the general” rather than “in the specific” because it enables us to write code that works with general types (like base classes or interfaces) instead of depending on specific, individual classes.
+
+When we program “in the general,” our code focuses on what an object can do, not what kind of object it is.
+This means we can write one piece of logic that applies to many different kinds of objects, as long as they share a common interface or base type.
+
+Advantages of Programming “in the General”
+
+Flexibility and Extensibility
+We can easily add new types or classes without changing existing code.
+The system can grow naturally as new behaviors are introduced.
+
+Reusability
+Generalized code can be reused across multiple parts of a program or even across different projects,
+because it isn’t tied to one specific implementation.
+
+Maintainability
+Since our code depends on general behavior rather than specific details,
+changes in one class don’t require updates throughout the whole program.
+
+Abstraction
+Polymorphism allows us to think at a higher level — focusing on what the program needs to achieve,
+not on the details of how each object performs its task.
+
+Polymorphism lets us design programs that are more flexible, reusable, and maintainable.
+It shifts our focus from specific implementations to general behaviors, allowing us to write code that works for many different situations
+without needing to change it every time a new type is added.
+

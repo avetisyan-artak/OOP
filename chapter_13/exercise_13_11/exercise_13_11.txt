@@ -1,0 +1,28 @@
+You have been asked to develop a flight simulator that will have elaborate graphical outputs.
+Explain why polymorphic programming would be especially effective for a problem of this nature.
+
+Answer:
+
+Polymorphic programming would be especially effective for a flight simulator with elaborate graphical outputs
+because such a system involves many different types of objects—airplanes, helicopters, birds, clouds, terrain, and more—that all share some common behaviors
+but have unique implementations.
+
+By using polymorphism:
+
+Generalization:
+    The simulator can define general interfaces for objects, such as draw(), move(), or update(), without knowing the exact type of object.
+    This allows the rendering engine to treat all objects uniformly.
+
+Extensibility:
+    New objects, like new aircraft models or environmental elements, can be added without modifying existing code.
+    The new objects simply implement the existing interfaces.
+
+Maintainability:
+    Changes or improvements to specific object behaviors (e.g., a new way a helicopter moves) can be made in the derived class without affecting the rest of the system.
+
+Dynamic behavior:
+    The simulator can decide at runtime which specific object behaviors to execute, allowing flexible interactions and more realistic graphics and motion.
+
+In summary, polymorphism enables the simulator to handle many different objects through common interfaces,
+making the system more flexible, extensible, and easier to maintain while supporting complex graphical outputs.
+

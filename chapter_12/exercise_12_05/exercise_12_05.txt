@@ -1,0 +1,11 @@
+Some programmers prefer not to use protected access because they believe it breaks the encapsulation of the base class.
+Discuss the relative merits of using protected access vs. using private access in base classes.
+
+Answer:
+
+protected access allows derived classes to directly access base-class members.
+It is convenient and makes inheritance easier, but it weakens encapsulation because derived classes depend directly on the base class's internal data.
+private access keeps the base-class data hidden and provides better encapsulation. Derived classes must use public or protected member functions to access or modify the data.
+
+In general, private is preferred because it protects the internal implementation, while protected can be useful when derived classes genuinely need direct access.
+

@@ -1,0 +1,9 @@
+What happens when a return type, even void, is specified for a constructor or destructor?
+
+Answer:
+
+A constructor or destructor cannot have a return type, not even void.
+
+If a return type is specified, the compiler does not treat it as a constructor or destructor.
+Instead, it considers it an ordinary member function with the same name as the class (or reports an error for a destructor), and the program will not compile correctly as intended.
+

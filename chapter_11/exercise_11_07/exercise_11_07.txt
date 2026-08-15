@@ -1,0 +1,6 @@
+The operators that cannot be overloaded are __________, __________, __________ and __________.
+
+Answer:
+
+The operators that cannot be overloaded are: . , .* , :: and ?:
+

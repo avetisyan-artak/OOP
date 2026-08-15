@@ -1,0 +1,33 @@
+Operator             Ultimate Operation(s)
+
+`+`                  Addition or combination of two objects; concatenation for strings/arrays; merging collections
+'-`                  Subtraction, removal, or difference between two objects; remove element from collection
+`*`                  Multiplication or repetition; scaling of numeric objects; repeating elements/strings
+`/`                  Division or partitioning; elementwise division of numeric objects
+`%`                  Modulo or remainder operation for numbers; cyclic operations
+`^`                  Bitwise XOR or exclusive combination of bits/elements
+`[]`                 Access individual element by index; direct read/write access
+`()`                 Function call behavior; mapping, evaluation, or slicing
+`!`                  Logical NOT or empty check; negation of boolean state
+`=`                  Assignment; making one object a copy of another
+`==`                 Equality comparison; check if contents/states match
+'!=`                 Inequality comparison; check if contents/states differ
+`>`                  Greater-than comparison; lexicographical or numeric comparison
+`<`                  Less-than comparison; lexicographical or numeric comparison
+`>=`                 Greater-than-or-equal comparison
+`<=`                 Less-than-or-equal comparison
+`+=`                 Addition assignment; merge or append another object into this one
+`-=`                 Subtraction assignment; remove, reduce, or extract from object
+`>>`                 Input from stream; extraction of data into object
+`<<`                 Output to stream; insertion of object’s data into a stream
+`++`                 Increment or advance object state; add 1 or move forward
+`--`                 Decrement or regress object state; subtract 1 or move backward
+`,`                  Sequence operator; combine operation
+`new` / `delete`     Allocate or deallocate memory for a single object
+`new[]` / `delete[]` Allocate or deallocate memory for an array of objects
+
+
+Operators with very clear ultimate roles: +, -, *, =, ==, [], ++, --, <<, >> — these are easy to define clearly for almost any class.
+Operators with limited but specialized ultimate roles: %, ^, ,, ->, new/delete — important in niche contexts.
+Operators that need care when overloading: *, -, !, () — their meaning can vary a lot depending on the class.
+

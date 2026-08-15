@@ -1,0 +1,29 @@
+Operator             Array                                                 Stack                                  String
+
+   +                  elementwise addition, concatenate arrays              push element, merge stacks          concatenate strings
+   -                  elementwise subtraction                               pop element, remove top             remove substring
+   *                  elementwise multiplication, scalar multiplication     repeat elements                     repeat string N times
+   /                  elementwise division                                  split stack (rare)                  split string (rare)
+    %                  elementwise modulo                                    modulo top element (rare)          rarely meaningful
+   ^                  elementwise XOR                                       XOR stacks                          XOR characters
+   []                 access element by index                               access element by index             access character by index
+   ()                 map function behavior, slice array                    execute function from top element   substring extraction
+   !                  logical NOT (all zeros check)                         isEmpty check                       empty string check
+   =                  assignment                                            assign one stack to another         assign string
+   ==                 compare all elements                                  compare stack contents              compare strings
+   !=                 compare all elements                                  compare stack contents              compare strings
+   >                  lexicographical / sum comparison                      compare sizes                       lexicographical comparison
+   <                  lexicographical / sum comparison                      compare sizes                       lexicographical comparison
+   >=                 lexicographical / sum comparison                      compare sizes                       lexicographical comparison
+   <=                 lexicographical / sum comparison                      compare sizes                       lexicographical comparison
+   +=                 add elements or concatenate                           push element                        append string
+   -=                 subtract elements                                     pop element                         remove substring
+   >>                 input stream into array                               pop into variable                   input string from stream
+   <<                 output array to stream                                push to stream                      output string to stream
+  ++`                 increment all elements                                push default element                append default char
+  --`                 decrement elements                                    pop element                         remove last char
+  ,`                  combine arrays                                        combine stacks                      combine string
+  ->`                 rarely meaningful                                     rarely meaningful                   rarely meaningful
+  new` / `delete`     custom memory allocation                              custom allocation                   custom allocation
+  new[]` / `delete[]` custom array allocation                               custom allocation                   custom allocation
+
